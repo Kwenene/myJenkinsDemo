@@ -21,6 +21,6 @@ RUN rm -rf /var/lib/apt/lists/* \
     /usr/share/man \
     /tmp/*
 
-COPY azuredeploy.json /usr/jenkins_home/azuredeploy.json
+#COPY azuredeploy.json /usr/jenkins_home/azuredeploy.json
 
-ENTRYPOINT ["azuredeploy.json"]
+#ENTRYPOINT ["azuredeploy.json"]
