@@ -20,3 +20,7 @@ RUN rm -rf /var/lib/apt/lists/* \
     /var/cache/apk/* \
     /usr/share/man \
     /tmp/*
+
+COPY azuredeploy.json /usr/jenkins_home/azuredeploy.json
+
+ENTRYPOINT ["azuredeploy.json"]
